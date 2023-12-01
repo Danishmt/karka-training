@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <button onClick="submit()">click</button>
+</body>
+<script>
+//     function submit(){
+//     let a= [1,2,3,4,5]
+//     for (let i=a.length-1;i>=0;i--){
+//         console.log(a[i])
+// }
+//        }
+
+
+//     function submit(){
+//     let a= [1,2,3,4,5]
+//     let b=[]
+//     for (let i=a.length-1;i>=0;i--){
+//         b.push(a[i])
+// }
+//    console.log(b)
+// }
+
+
+
+
+      //reverse the string
+
+string="danish"
+function Reverse(string) {
+    return string.split('').reverse().join('')
+}
+ console.log(Reverse(string))
+   
+
+         //uppercase
+
+var array="ia very cool"
+var newarray = [];
+function uppercase(array)
+{
+  var array = array.split(' ');
+      for(var i = 0; i < array.length; i++){
+      newarray.push(array[i].charAt(0).toUpperCase()+array[i].slice(1));
+  }
+  return newarray.join(' ');
+}
+console.log(uppercase(array));
+
+
+     //merge 2 array into single array
+
+arr1=[1,3,5,7,9]
+arr2=[2,4,6,8,10]
+function merge(arr1, arr2) {
+  let result = [...arr1,...arr2];
+  return result.sort((arr1,arr2) => arr1-arr2);
+}
+console.log(merge(arr1,arr2))
+
+   
+      
+</script>
+</html>
